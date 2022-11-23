@@ -1,0 +1,168 @@
+﻿Faculdade Impacta de Tecnologia
+Curso: Analise desenvolvimento de sistemas.
+Turma:  ADS 2B
+Disciplina: Linguagem SQL
+
+
+
+
+
+
+
+
+Exercícios Revisão
+
+
+
+
+
+
+Professor: Denilson Grupp Fernandes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Utilizando o banco de dados [AdventureWorksLT2019], que foi disponibilizado junto a avaliação, desenvolva os 5 scripts a seguir:
+        DIAGRAMA DE BANCO DE DADOS [AdventureWorksLT2019] 
+
+
+  
+
+
+
+1 - Crie uma consulta com as especificações abaixo:
+Colunas:
+* Descricao=Campo Descricao da tabela Descricao Produto em minúsculo.
+* nome=Nome do produto
+* cor = Cor do Produto em maiúsculo
+* qtd=Quantidade de pedido da tabela Detalhe Pedido
+* data=Data do Pedido
+* dife=Diferença de dias da data do pedido para hoje
+Filtrar:
+* Apenas clientes que o titulo é “Mrs.”
+
+
+2 – Criar uma nova tabela TEMPORÁRIA (#) chamada “Employee” com as seguintes colunas
+
+
+NOME COLUNA
+	TIPO
+	OBSERVAÇÃO
+	id_employee
+	INT
+	PRIMARY KEY, IDENTITY(1,1)
+	Name
+	VARCHAR(200)
+	NOT NULL
+	born
+	DATE
+	default ‘1910-09-01’
+	
+
+Insira os dados abaixo:
+id_employee
+	Name
+	born
+	1
+	Barney Swarley
+	
+
+	2
+	Prison Mike
+	1978-01-01
+	3
+	Chandler Geller
+	1988-03-08
+	4
+	Ramon Valdes
+	1990-04-08
+	
+
+Atualize o campo born ‘1900-01-01’ da tabela Employee onde o Name =  “Prison Mike”
+3 – Crie uma consulta com as especificações abaixo:
+Colunas:
+* Nome_produto = nome do produto.
+* Nome_modelo = nome do modelo do produto.
+* Nome_categoria = nome da categoria do produto.
+* Custo_padrao = custo padrão do produto.
+* Anos_venda = diferença em anos da data atual para a data início venda do produto.
+* Valores = Soma dos valores de preco_unitario da tabela pedido_detalhe
+Agrupar
+nome do produto.
+* nome da categoria do produto.
+*  nome do produto.
+* nome do modelo do produto.
+*  data atual
+
+
+4- Crie uma consulta com as especificações abaixo:
+Colunas:
+* Descricao = Descricao da tabela descricao produto
+* modelo = Nome do modelo do produto
+* Cultura = Nome da cultura da descricao do modelo do produto, se caso for null, deverá retornar ‘não informado’
+* produto = Nome do produto 
+codigo produto = Duas primeiras letras do nome produto
+Ordenar:
+* codigo produto
+
+
+
+
+5 – Crie uma consulta com as especificações abaixo:
+Colunas:
+* Companhia_cliente = nome da companhia do cliente.
+* Soma_total = soma total da quantidade_pedido, da tabela detalhe pedido.
+* Soma_cor = soma da quantidade_pedido, da tabela detalhe pedido onde a cor do produto é igual a cor é igual “Black”.
+Agrupar por:
+* Nome da companhia do cliente.
+6 – Crie uma consulta com as especificações abaixo:
+Colunas:
+* Primeiro_nome = primeiro nome do cliente
+* Ultimo_nome = último nome do cliente
+* Cidade = cidade do endereço do cliente
+* Estado = Estado do endereço do cliente
+* Regiao = Regiao do endereço do cliente
+         Filtrar:
+        Onde o primeiro nome do cliente possui a letra “a”
+
+
+7 – Crie uma consulta com as especificações abaixo:
+Colunas:
+* numero = numero do pedido
+* ordem = ordem do pedido
+* nome = Nome cliente
+* cidade_entrega = cidade do endereço de entrega do pedido
+* cidade_conta = cidade do endereço da conta do pedido
+* cidade_cliente = cidade do endereço do cliente
+Filtrar
+* onde a cidade de entrega do pedido é igual a cidade do cliente
